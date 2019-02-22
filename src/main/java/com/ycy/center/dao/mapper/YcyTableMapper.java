@@ -2,9 +2,7 @@ package com.ycy.center.dao.mapper;
 
 import com.ycy.center.dao.entity.YcyTable;
 import com.ycy.center.dao.entity.YcyTableExample;
-
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 public interface YcyTableMapper {

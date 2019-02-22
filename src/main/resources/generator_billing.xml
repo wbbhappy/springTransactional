@@ -5,8 +5,7 @@
 	<!--<classPathEntry location="D:\generator_mybatis\mysql-connector-java-5.1.24-bin.jar" 
 		/> -->
 	<!--defaultModelType="flat" 大数据字段，不分表 -->
-	<context id="MSTables" targetRuntime="MyBatis3"
-		defaultModelType="flat">
+	<context id="MSTables" targetRuntime="MyBatis3" defaultModelType="flat">
 		<!--列，表名，与数据库关键字相同，的处理方式 -->
 		<property name="autoDelimitKeywords" value="true" />
 		<property name="beginningDelimiter" value="`" />
@@ -17,17 +16,11 @@
 		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
 		<!--实体生成toString方法 -->
 		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
-
-
-
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://127.0.0.1/ycydb" userId="ycy"
-			password="123456"></jdbcConnection>
-
+			connectionURL="jdbc:mysql://127.0.0.1/ycydb" userId="root" password="root"></jdbcConnection>
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
-
 		<!-- targetProject:自动生成代码的entity位置 center.dao.entity -->
 		<javaModelGenerator targetPackage="com.ycy.center.dao.entity"
 			targetProject="src/main/java">
@@ -45,7 +38,6 @@
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
-
 		<!-- 添加表 -->
 		<!-- <table tableName="ad_billing_express" enableCountByExample="true" 
 			enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" 

@@ -9,6 +9,5 @@
         <!-- 数据库超过30秒仍未响应则超时 -->
         <setting name="defaultStatementTimeout" value="10" />
     </settings>
-    <mappers>
-    </mappers>
+    <mappers></mappers>
 </configuration>
