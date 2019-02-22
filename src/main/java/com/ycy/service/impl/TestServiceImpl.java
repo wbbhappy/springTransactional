@@ -18,9 +18,9 @@ public class TestServiceImpl implements com.ycy.service.TestService {
             ycyTable.setName(name);
             ycyTable.setNum(num);
             ycyTableMapper.insert(ycyTable);
-            /*if (num == 3) {
+            if (num == 3) {
                 int i = 1 / 0;// 此处会产生异常
-            }*/
+            }
         } catch (Exception ex) {
             System.out.println(num + "service异常日志处理");
         }
